@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FS Travel | Search</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/main.d4190f58.css">
+    <link href="/toastr.36545529.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-container">
+                <img class="header__logo" src="/agency_logo.76cd63aa.png" alt="FS Travel logo">
+                <nav class="header__navigation_block">
+                    <a href="/" class="header__link--home">&lt; Home</a>
+                    <a href="/about_us.html" class="header__link">About Us</a>
+                    <a href="/reviews.html" class="header__link">Reviews</a>
+                </nav>
+            </div>
+        </header>
+
+        <div class="search__container">
+            <div class="search__actions-btns">
+                <div class="search__full-info-btns">
+                    <button class="search__info-btn" data-info-type="managers">Get managers list</button>
+                    <button class="search__info-btn" data-info-type="reservations">Get reservations list</button>
+                    <button class="search__info-btn" data-info-type="tours">Get tours list</button>
+                    <button class="search__info-btn" data-info-type="tour_operators">Get tour operators list</button>
+                    <button class="search__info-btn" data-info-type="flights">Get flights list</button>
+                </div>
+
+                <div class="search__selection-container">
+                    <div class="login__input-container">
+                        <p class="login__label">Search tours by type</p>
+                        <select class="search__select" id="tour-type-selection">
+                            <option value="" disabled="" selected="" style="display:none;">Select tour type...</option>
+                            <option>Sights</option>
+                            <option>Ecotour</option>
+                            <option>Extreme</option>
+                            <option>Gastro</option>
+                            <option>Separate</option>
+                            <option>Wedding</option>
+                            <option>Cruise</option>
+                        </select>
+                    </div>
+                    <div class="login__input-container">
+                        <p class="login__label">Search tours by food</p>
+                        <select class="search__select" id="tour-food-selection">
+                            <option value="" disabled="" selected="" style="display:none;">Select food...</option>
+                            <option>Inclusive</option>
+                            <option>Non-inclusive</option>
+                        </select>
+                    </div>
+                    <div class="login__input-container">
+                        <p class="login__label">Search tours by tour operators</p>
+                        <select class="search__select" id="tour-to-selection">
+                            <option value="" disabled="" selected="" style="display:none;">Select tour operator...</option>
+                            <option>TEZ Tour</option>
+                            <option>Pegas</option>
+                            <option>Coral Travel</option>
+                            <option>AML Travel</option>
+                            <option>Acu Travel</option>
+                            <option>Turistik</option>
+                            <option>Avalon Tour</option>
+                            <option>ANEX Tour</option>
+                            <option>AeroBelServis</option>
+                            <option>Eurotrips</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="search__manager-options">
+                    <h2 class="search__manager-title">Manager options</h2>
+                    <hr class="search__manager-divider">
+                    <div class="search__manager-btns">
+                        <div class="login__input-container">
+                            <button class="search__info-manager-btn search__delete-btn" data-instance="flights">Delete
+                                flight</button>
+                        </div>
+                        <div class="login__input-container">
+                            <button class="search__info-manager-btn search__delete-btn" data-instance="reservations">Delete reservation</button>
+                        </div>
+                        <div class="login__input-container">
+                            <button class="search__info-btn" data-info-type="clients">Get clients</button>
+                            <button class="search__info-manager-btn search__delete-btn" data-instance="clients">Delete
+                                client</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="search__output-result">
+                <h2 class="search__title">Search results</h2>
+                <hr class="search__divider">
+                <div class="search__result-table"></div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p class="footer__copyright">Copyright © 2020 ForeignSunTravel Agency</p>
+        </footer>
+
+        <script src="/toastr.2b43d8a5.js"></script>
+        <script src="/search-info.640c9d52.js"></script>
+</div></body>
+
+</html>

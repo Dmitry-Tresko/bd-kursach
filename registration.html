@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FS Travel | Sign In</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style/main.css">
+    <link href="./node_modules/toastr/toastr.scss" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-container">
+                <img class="header__logo" src="./img/agency_logo.png" alt="FS Travel logo">
+                <nav class="header__navigation_block">
+                    <a href="/" class="header__link--home">&lt; Home</a>
+                    <a href="/about_us.html" class="header__link">About Us</a>
+                    <a href="/reviews.html" class="header__link">Reviews</a>
+                </nav>
+            </div>
+        </header>
+
+        <div class="registration__container">
+            <h1 class="registration__title">Fill in all required info about you</h1>
+            <hr class="registration__divider">
+            <form novalidate autocomplete="off" class="registration__form">
+                <div class="registration__form-inputs-container">
+                    <div class="registration__form-parts-container">
+                        <div class="login__input-container">
+                            <label class="login__label">Login:</label>
+                            <input class="registration__input" type="text" id="login-login" required>
+                        </div>
+                        <div class="login__input-container">
+                            <label class="login__label">Password:</label>
+                            <input class="registration__input" type="password" id="login-password" required>
+                        </div>
+                        <div class="login__input-container">
+                            <label class="login__label">Full name (Name + Surname):</label>
+                            <input class="registration__input" type="text" id="login-name" required>
+                        </div>
+                        <div class="login__input-container">
+                            <label class="login__label">Date of birth:</label>
+                            <input class="registration__input" type="date" id="login-birthdate" required>
+                        </div>
+                        <div class="login__input-container">
+                            <label class="login__label">Phone number:</label>
+                            <input class="registration__input" type="text" id="login-phone" required>
+                        </div>
+                    </div>
+
+                    <div class="registration__form-parts-container">
+                        <div class="login__input-container">
+                            <label class="login__label">Address:</label>
+                            <input class="registration__input" type="text" id="login-address" name="login" required>
+                        </div>
+
+
+                        <div class="login__input-container">
+                            <label class="login__label">Passport series:</label>
+                            <input class="registration__input" type="text" id="login-passport-series" required>
+                        </div>
+
+                        <div class="login__input-container">
+                            <label class="login__label">Passport number:</label>
+                            <input class="registration__input" type="text" id="login-passport-num" required>
+                        </div>
+
+                        <div class="login__input-container">
+                            <label class="login__label">Passport date of issue:</label>
+                            <input class="registration__input" type="date" id="login-passport-issue-date" required>
+                        </div>
+
+                        <div class="login__input-container">
+                            <label class="login__label">Passport date of expiry:</label>
+                            <input class="registration__input" type="date" id="login-passport-expiry-date" required>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button" class="registration__submit-btn">CONFIRM NEW ACCOUNT</button>
+            </form>
+        </div>
+
+        <footer class="footer">
+            <p class="footer__copyright">Copyright © 2020 ForeignSunTravel Agency</p>
+        </footer>
+    </div>
+
+    <script src="./node_modules/toastr/toastr.js"></script>
+    <script src="registration.js"></script>
+</body>
+
+</html>

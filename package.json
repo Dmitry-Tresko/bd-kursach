@@ -1,0 +1,26 @@
+{
+  "name": "osbd-kursach",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "Dmitry Tresko",
+  "license": "ISC",
+  "dependencies": {
+    "core-js": "^3.8.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6",
+    "parcel-bundler": "^1.12.4",
+    "pg": "^8.5.1",
+    "regenerator-runtime": "^0.13.7",
+    "toastr": "^2.1.4"
+  },
+  "proxy": "http://localhost:5000"
+}
